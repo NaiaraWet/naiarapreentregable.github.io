@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Interactivo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Simulador de Carrito de Compras</h1>
+        <form id="formularioProducto">
+
+            <label for="nombreProducto">Nombre del Producto:</label>
+            <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Nombre del Producto" required>
+
+            <label for="precioProducto">Precio:</label>
+            <input type="number" id="precioProducto" placeholder="Precio" required>
+            
+            <label for="descripcionProducto">Descripción:</label>
+            <textarea id="descripcionProducto" placeholder="Descripción" required></textarea>
+
+            <label for="cantidadProducto">Cantidad:</label>
+            <input type="number" id="cantidadProducto" placeholder="Cantidad" required>
+            <button type="submit" style="margin-top: 10px;">Agregar al Carrito</button>
+        </form>
+        <button id="vaciarCarrito" style="margin-top: 20px;">Vaciar Carrito</button>
+
+        <p id="totalProductos">Total de productos: 0</p>
+
+        <ul id="listaProductos"></ul>
+    </div>
+    <script src="js/simulador.js"></script>
+</body>
+</html>
